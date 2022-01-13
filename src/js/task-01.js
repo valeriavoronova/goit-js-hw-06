@@ -1,2 +1,21 @@
-// достать элеметны соответствующие: юл- дети и полсчитать кол-во и вывести
-// достапть и вывести содержимое ребенка ли-айтем, достать ли-айтем- ласт -чайлд чилдрен и посчитать кол-во
+
+
+const itemsRef = document.querySelectorAll('.item');
+
+console.log("Number of categories:", itemsRef.length);
+
+
+
+const titleRef = document.querySelectorAll("h2");
+
+    for(const text of titleRef){
+            console.log("\nCategory:",text.textContent);
+            console.log("Elements:",text.nextSibling.nextSibling.children.length);
+
+        }
+
+
+
+
+
+
