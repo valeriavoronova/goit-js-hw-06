@@ -15,7 +15,7 @@ const ingredients = [
 // После чего вставит все <li> за одну операцию в список ul.ingredients.
 
 const ingredientsRef = document.querySelector("#ingredients");
-console.log(ingredientsRef);
+
 
 
 for( const ingredient of ingredients){
