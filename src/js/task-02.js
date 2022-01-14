@@ -15,11 +15,14 @@ const ingredients = [
 // После чего вставит все <li> за одну операцию в список ul.ingredients.
 
 const ingredientsRef = document.querySelector("#ingredients");
+const justAnArr =[];
 
-for( const ingredient of ingredients){
+ingredients.map(ingredient =>{
   const productItem = document.createElement("li");
   productItem.classList.add("item");
   productItem.textContent = ingredient;
-  ingredientsRef.append(productItem);
-}
+  console.log(productItem);
+  return justAnArr.push(productItem);
+});
 
+ingredientsRef.append(...justAnArr);
