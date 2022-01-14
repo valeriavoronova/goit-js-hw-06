@@ -16,8 +16,6 @@ const ingredients = [
 
 const ingredientsRef = document.querySelector("#ingredients");
 
-
-
 for( const ingredient of ingredients){
   const productItem = document.createElement("li");
   productItem.classList.add("item");
