@@ -21,4 +21,3 @@ const clickD = () => { counterValue -= 1; value.textContent = counterValue;}
 incrementRef.addEventListener("click", clickI);
 decrementRef.addEventListener("click", clickD);
 
-console.log(counterValue);
