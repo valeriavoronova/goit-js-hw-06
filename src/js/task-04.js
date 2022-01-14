@@ -14,10 +14,10 @@ const incrementRef = document.querySelector('button[data-action="increment"]');
 const decrementRef = document.querySelector('button[data-action="decrement"]');
 const value = document.querySelector("#value");
 
-const clickI = () => { counterValue += 1; value.textContent = counterValue; }
+const buttonIncreaseHandler = () => { counterValue += 1; value.textContent = counterValue; }
 
-const clickD = () => { counterValue -= 1; value.textContent = counterValue;}
+const buttonDecreaseHandler = () => { counterValue -= 1; value.textContent = counterValue;}
 
-incrementRef.addEventListener("click", clickI);
-decrementRef.addEventListener("click", clickD);
+incrementRef.addEventListener("click", buttonIncreaseHandler);
+decrementRef.addEventListener("click", buttonDecreaseHandler);
 
