@@ -8,9 +8,6 @@
 
 const inputRef = document.querySelector("#name-input");
 const outputRef = document.querySelector("#name-output");
-console.log(outputRef.textContent);
-
-
 
 inputRef.addEventListener("input", inputChangeHandler);
 
