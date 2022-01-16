@@ -18,7 +18,6 @@ function inputChangeHandler(event) {
     // if (event.currentTarget.value === "") {
     //     return outputRef.textContent = "Anonymous";
     // }
-    // else
-    //     return outputRef.textContent = event.currentTarget.value;
+    // return outputRef.textContent = event.currentTarget.value;
 }
 
