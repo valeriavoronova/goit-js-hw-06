@@ -22,11 +22,21 @@
 //   border-color: #f44336;
 // }
 const inputRef = document.querySelector("#validation-input");
-//console.log(inputRef.dataset.length);
-inputRef.addEventListener("blur", blurFocusHandler);
+// console.log(inputRef.dataset.length);
+inputRef.addEventListener("blur", unFocusHandler);
 
-function blurFocusHandler() {   
-    if (event.currentTarget.value === inputRef.dataset.length) {
-        inputRef.style.borderColor.valid;
+
+function unFocusHandler() { 
+    // console.log("текущая длина ввода", event.currentTarget.value.length);
+    // console.log("заданный параметр", inputRef.dataset.length);
+    // console.log("они равны?", event.currentTarget.value.length == inputRef.dataset.length);
+    if (event.currentTarget.value.length == inputRef.dataset.length) {
+        event.currentTarget.classList.remove("invalid");
+        event.currentTarget.classList.add("valid");    
     }
+    else {
+        event.currentTarget.classList.remove("valid");
+        event.currentTarget.classList.add("invalid");
+    }
+        
 }
