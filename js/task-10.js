@@ -20,3 +20,26 @@
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+
+const boxesRef = document.querySelector("#boxes");
+const inputRef = document.querySelector("input");
+const createButt = document.querySelector('button[data-create]');
+const destroyButt = document.querySelector('button[data-destroy]');
+const boxesCount = inputRef.value;
+
+inputRef.addEventListener("input", inputHandler);
+createButt.addEventListener("click", createButtHandler);
+destroyButt.addEventListener("click", destroyButtHandler);
+
+function inputHandler(event){
+  //console.log(inputRef.value);
+  return event.currentTarget.value;
+}
+
+function createButtHandler() {};
+
+function destroyButtHandler() {};
+
+
+
+console.log(boxesCount);
