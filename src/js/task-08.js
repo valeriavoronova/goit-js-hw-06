@@ -1,16 +1,4 @@
 // Напиши скрипт управления формой логина.
-
-// <form class="login-form">
-//   <label>
-//     Email
-//     <input type="email" name="email" />
-//   </label>
-//   <label>
-//     Password
-//     <input type="password" name="password" />
-//   </label>
-//   <button type="submit">Login</button>
-// </form>
 // Обработка отправки формы form.login-form должна быть по событию submit.
 // При отправке формы страница не должна перезагружаться.
 // Если в форме есть незаполненные поля, выводи alert с предупреждением о том, 
@@ -27,7 +15,7 @@ console.log()
 formRef.addEventListener("submit", formSubmitHandler);
 
 function formSubmitHandler(event){
-    
+
     event.preventDefault();
 
     if( formRef.elements.password.value != "" || formRef.elements.email.value != "") {
