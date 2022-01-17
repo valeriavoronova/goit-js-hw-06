@@ -35,7 +35,7 @@ function inputHandler(){
   return inputRef.value;
 }
 
-function createButtHandler(event) {
+function createButtHandler() {
   const arr =[]; 
   let size = 20;
   
