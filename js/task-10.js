@@ -51,7 +51,10 @@ function createButtHandler() {
   return console.log(boxesRef);
 };
 
-function destroyButtHandler() {};
+function destroyButtHandler() {
+  boxesRef.innerHTML = '';
+
+};
 
 
 
