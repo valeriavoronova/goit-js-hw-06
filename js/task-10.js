@@ -37,8 +37,12 @@ function inputHandler(){
 
 function createButtHandler(event) {
   const arr =[]; 
-  for (let i = 0; i < inputRef.value; i +=1){
+  
+  for (let i = 0; i < inputRef.value  ; i +=1){
     const div = document.createElement("div");
+    div.style.width = "30px"
+    div.style.height = "30px"
+    div.style.backgroundColor = getRandomHexColor();
     
     arr.push(div);
   }
