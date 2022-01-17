@@ -26,5 +26,5 @@ function formSubmitHandler(event){
         return console.log(formData);
     }
 
-    return    alert("все поля должны быть заполнены"); 
+    return alert("все поля должны быть заполнены"); 
 }
