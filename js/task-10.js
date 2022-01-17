@@ -53,7 +53,7 @@ function createButtHandler() {
 
 function destroyButtHandler() {
   boxesRef.innerHTML = '';
-
+  inputRef.value = "";
 };
 
 
