@@ -5,7 +5,7 @@
 
 const fontSizeControl = document.querySelector("input");
 const text = document.querySelector("span");
-//text.style.fontSize = fontSizeControl.max + "px";
+text.style.fontSize = fontSizeControl.value + "px";
 //console.log(fontSizeControl);
 fontSizeControl.addEventListener("input", sizeControlHandler);
 
