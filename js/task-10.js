@@ -37,13 +37,14 @@ function inputHandler(){
 
 function createButtHandler(event) {
   const arr =[]; 
+  let size = 20;
   
   for (let i = 0; i < inputRef.value  ; i +=1){
     const div = document.createElement("div");
-    div.style.width = "30px"
-    div.style.height = "30px"
+    size +=10;
+    div.style.width = size + "px";
+    div.style.height = size + "px";
     div.style.backgroundColor = getRandomHexColor();
-    
     arr.push(div);
   }
   boxesRef.append(...arr);
@@ -54,4 +55,4 @@ function destroyButtHandler() {};
 
 
 
-//console.log(boxesCount);
+//console.log(10+ "px" + 30 );
