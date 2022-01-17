@@ -25,21 +25,29 @@ const boxesRef = document.querySelector("#boxes");
 const inputRef = document.querySelector("input");
 const createButt = document.querySelector('button[data-create]');
 const destroyButt = document.querySelector('button[data-destroy]');
-const boxesCount = inputRef.value;
 
 inputRef.addEventListener("input", inputHandler);
 createButt.addEventListener("click", createButtHandler);
 destroyButt.addEventListener("click", destroyButtHandler);
 
-function inputHandler(event){
-  //console.log(inputRef.value);
-  return event.currentTarget.value;
+function inputHandler(){
+  //console.log(event.currentTarget.value);
+  return inputRef.value;
 }
 
-function createButtHandler() {};
+function createButtHandler(event) {
+  const arr =[]; 
+  for (let i = 0; i < inputRef.value; i +=1){
+    const div = document.createElement("div");
+    
+    arr.push(div);
+  }
+  boxesRef.append(...arr);
+  return console.log(boxesRef);
+};
 
 function destroyButtHandler() {};
 
 
 
-console.log(boxesCount);
+//console.log(boxesCount);
