@@ -13,7 +13,7 @@ inputRef.addEventListener("blur", unFocusHandler);
 
 
 function unFocusHandler(event) { 
-    console.log("текущая длина ввода", event.currentTarget.value.length);
+    //console.log("текущая длина ввода", event.currentTarget.value.length);
     // console.log("заданный параметр", inputRef.dataset.length);
     // console.log("они равны?", event.currentTarget.value.length == inputRef.dataset.length);
     if (event.currentTarget.value.length == inputRef.dataset.length) {
