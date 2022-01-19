@@ -31,11 +31,15 @@ const galleryArr = images.map(image => {
   imgEl.width = 300;
   imgEl.height = 250;
   listEl.appendChild(imgEl);
+  //listEl.insertAdjacentHTML('afterend',`${imgEl}`);
   return listEl;
 
 });
 
-containerRef.append(...galleryArr);
+console.log(galleryArr);
+
+containerRef.insertAdjacentHTML('afterend',...galleryArr)
+//containerRef.append(...galleryArr);
 
 containerRef.style.display = "flex";
 containerRef.style.listStyleType = "none";
