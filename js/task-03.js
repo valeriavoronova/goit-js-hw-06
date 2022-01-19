@@ -23,23 +23,30 @@ const images = [
 
 const containerRef = document.querySelector(".gallery");
 
+// const galleryArr = images.map(image => {
+//   const listEl = document.createElement("li");
+//   const imgEl = document.createElement("img");
+//   imgEl.src = image.url;
+//   imgEl.alt = image.alt;
+//   imgEl.width = 300;
+//   imgEl.height = 250;
+//   listEl.appendChild(imgEl);
+//   //listEl.insertAdjacentHTML('afterend',`${imgEl}`);
+//   return listEl;
+
+// });
+
+// console.log(galleryArr);
+
+// //containerRef.insertAdjacentHTML('afterend',...galleryArr)
+// containerRef.append(...galleryArr);
 const galleryArr = images.map(image => {
-  const listEl = document.createElement("li");
-  const imgEl = document.createElement("img");
-  imgEl.src = image.url;
-  imgEl.alt = image.alt;
-  imgEl.width = 300;
-  imgEl.height = 250;
-  listEl.appendChild(imgEl);
-  //listEl.insertAdjacentHTML('afterend',`${imgEl}`);
+  const listEl = `<li><img src=${image.url} alt = ${image.alt} height=250></img></li>`;
   return listEl;
-
-});
-
-console.log(galleryArr);
-
-containerRef.insertAdjacentHTML('afterend',...galleryArr)
-//containerRef.append(...galleryArr);
-
+})
+ 
+//console.log(galleryArr)
+containerRef.insertAdjacentHTML('beforeEnd', galleryArr);
+console.log(containerRef)
 containerRef.style.display = "flex";
 containerRef.style.listStyleType = "none";
