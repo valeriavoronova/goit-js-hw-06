@@ -18,13 +18,17 @@ function formSubmitHandler(event){
 
     event.preventDefault();
 
-    if( formRef.elements.password.value !== "" && formRef.elements.email.value !== "") {
-        const email =  formRef.elements.email.value;
+    if (formRef.elements.password.value !== "" && formRef.elements.email.value !== "") {
+        const email = formRef.elements.email.value;
         const password = formRef.elements.password.value;
         const formData = { email, password, };
         formRef.reset();
         return console.log(formData);
     }
     
-    return alert("все поля должны быть заполнены"); 
+    else {
+        formRef.reset();
+        return alert("все поля должны быть заполнены");
+
+    }
 }
