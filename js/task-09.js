@@ -13,5 +13,5 @@ buttonRef.addEventListener("click", setRandomHexColor);
 
 function setRandomHexColor() {
   bodyRef.style.backgroundColor = getRandomHexColor();
-  descrRef.textContent = bodyRef.style.backgroundColor;
+  descrRef.textContent = `${bodyRef.style.backgroundColor}`;
 }
