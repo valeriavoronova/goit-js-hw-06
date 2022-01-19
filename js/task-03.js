@@ -42,11 +42,12 @@ const containerRef = document.querySelector(".gallery");
 // containerRef.append(...galleryArr);
 const galleryArr = images.map(image => {
   const listEl = `<li><img src=${image.url} alt = ${image.alt} height=250></img></li>`;
+  //console.log(listEl)
   return listEl;
 })
- 
+const galleryUpd = galleryArr[0] + galleryArr[1] + galleryArr[2];
 //console.log(galleryArr)
-containerRef.insertAdjacentHTML('beforeEnd', galleryArr);
+containerRef.insertAdjacentHTML('beforeEnd', galleryUpd);
 console.log(containerRef)
 containerRef.style.display = "flex";
 containerRef.style.listStyleType = "none";
