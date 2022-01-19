@@ -21,7 +21,7 @@ function unFocusHandler(event) {
         event.currentTarget.classList.remove("valid");
     }
 
-    if (event.currentTarget.value.length == inputRef.dataset.length) {
+    if (event.currentTarget.value.length.toString() === inputRef.dataset.length) {
         removeClasses ();
         event.currentTarget.classList.add("valid");    
     }
