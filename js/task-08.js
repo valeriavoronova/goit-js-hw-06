@@ -22,12 +22,13 @@ function formSubmitHandler(event){
         const email = formRef.elements.email.value;
         const password = formRef.elements.password.value;
         const formData = { email, password, };
+        
         formRef.reset();
         return console.log(formData);
     }
     
     else {
-        formRef.reset();
+        //formRef.reset();
         return alert("все поля должны быть заполнены");
 
     }
