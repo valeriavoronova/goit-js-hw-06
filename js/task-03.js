@@ -45,7 +45,8 @@ const galleryArr = images.map(image => {
   //console.log(listEl)
   return listEl;
 })
-const galleryUpd = galleryArr[0] + galleryArr[1] + galleryArr[2];
+//const galleryUpd = galleryArr[0] + galleryArr[1] + galleryArr[2];
+const galleryUpd = galleryArr.join("");
 //console.log(galleryArr)
 containerRef.insertAdjacentHTML('beforeEnd', galleryUpd);
 console.log(containerRef)
